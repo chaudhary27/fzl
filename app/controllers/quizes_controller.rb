@@ -1,6 +1,6 @@
 class QuizesController < ApplicationController
 
 	def index
-		@summary = Summary.first
+		@summary = Summary.order("Random()").first
 	end
 end
